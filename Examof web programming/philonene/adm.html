@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head>
+	<title>ESA PAGE</title></head>
+	<style type="text/css">
+
+.body {
+            font-family: Arial, sans-serif;
+            
+            margin: 0;
+            padding: 0;
+           background-image: url(image\ 1.png);
+            background-size:cover;
+            background-size: 100%;
+            background-position: center;
+            background-color: aliceblue;
+        }
+
+		.top-header{
+			width: 100%;
+			height: 20px;
+			background-color:skyblue;;
+			border: 1px solid black;
+			padding: 60px;
+		}
+		.top-header-left{
+		    width:450px;
+		    height: 80px;
+	        margin-left:0px;
+			background-color:white;
+	    }
+		
+	    .top-header-link{
+             color: black;
+            text-decoration: none;
+             border:3px ;
+             font-weight:bold;
+             
+		    font-size: 25px;
+		    margin-top:4px;
+
+
+	    }
+	    .top-header-link:hover{
+            color: black;
+             border-radius: left;
+             background-color: rgb(0,140,220);
+             font-size: 25px;
+
+
+	    }
+       	.header{
+			width: 900;
+			height: 60px;
+			padding-left: 100px;
+			padding: 10px 0px 10px 0px;	
+		}
+	    .header-left{
+		    width: 500px;
+		    height: 80px;
+		    margin-left: 100px;
+	    }
+	    .header-right{
+		    width: 750px;
+		    height: 80px;
+		    margin-left: 480px;
+		    margin-top: -70px;
+	    }
+	    .link-menu{
+		    float: left;
+		    margin-left: 40px;
+		    margin-top: 10px;
+     	}
+	    .ul{
+		    list-style-type: none;
+	    }
+	    .link{
+		    color: #CCCFFF;
+		    background-color:  none;
+		    font-weight: bold;
+		    
+		    padding: 10px;
+		    text-decoration: none;
+	    }
+	    .link:hover{
+	        color:  #ffffff;
+	        background-color:  #FFcc00;
+	    }
+	    .active{
+		    color: white;
+		    background-color: none;
+		    border-bottom: 2px solid #FFcd00;
+	
+	    }
+		
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(0,140,200);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(0,140,180);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.content{
+		    width: 100%;
+		    height: 700px;
+		    margin-top: 1px;
+		    padding: 15 PX;
+		    border: 1px solid black;
+		    background-color:;
+		    background-image:  url(".jpg");
+		    background-size: cover;
+		    background-position: center;
+	    }
+
+ .footer{
+			width:100%;
+			height:100px;
+			margin-top:20px;
+			background-color: ;
+			border: 0px solid black;	
+		}
+	
+</style>
+</head>
+<div class="body">
+<body>
+	<div class="top-header">
+				<table width="100%" style="color: white;">
+					<tr>
+						  <a href="Reya.html" class="top-header-link"target="main_frame"style="margin-left: 80px;">HOME</a>&nbsp;&nbsp;
+						
+						<a class="top-header-link" href="tougt.html"target="main_frame"style="margin-left: 80px;">ABOUT US</a>
+						<a class="top-header-link" href="preproduct.html"target="main_frame"style="margin-left: 80px;">OUR PRODUCT</a>
+						 
+						<a class="top-header-link"href="contactus.html"target="main_frame"style="margin-left: 80px;">CONTACT US</a>
+					
+						 </div>
+						 </div>
+						
+						</div>
+                      
+				
+                        <a href="session.php" class="top-header-link"style="margin-left: 80px;">LOGOUT</a>
+					</tr>
+				</table></div>
+		<!--content section-->
+<div class="content">
+    	
+    	<iframe frameborder="0"width="100%"height="460px" name="main_frame"></iframe>
+</div>	
+<div class="footer">
+<center>
+	<b>
+<fieldset style="width:100%;">
+
+conctact us:
+<p>ESA BIRAMBO<br>
+West Pronvince,Karongi District,Gashali Sector<br>
+Po. Box 2681 KIGALI RWANDA<br>
++ 250(0)788354848 or + 250(0)0788358182<br>
+Esab@gmail.com<br>
+www.Esa Birambo.com<br></center>
+<center>
+<h4>If You Have A Problem You can Contact Us</h4>
+<img src="download (1).jpg"style="width:200px;height="150pix;">
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body><br><br>
+    <?php
+include "menu.php";
+?>
+    <center>
+    <form action="Login.php" method="POST" class="form" ><br><br>
+        <h1>LOGIN FORM</h1><br><br>
+        <?php if (isset($_GET['error'])){?>
+            <p class="error"><?php echo $_GET['error'];?></p>
+            <?php }?>
+<label>Username</label><br>
+<input type="text" name="uname" placeholder="enter user name" class="input" required><br>
+    <label>Password</label><br>
+    <input type="password" name="password" placeholder="enter password" class="input"><br><br>
+    <input type="submit" name="submit" value="LOGIN" id="button">
+    <input type="reset" name="reset" value="CANCEL" id="btton">
+    <p>Don't have Account <a href="create.php" class="hrf">REGISTER</a></p>
+
+        </form> 
+        </center> 
+
+		<?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+
+if (isset($_GET['action']) && $_GET['action'] == 'logout') {
+    session_destroy();  
+    header("Location: index.php"); 
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="logoutModalLabel">Confirm Logout</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure! You want to logout?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="confirmLogout()">Logout</button>
+            </div>
+        </div>
+		<image
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        $('#logoutModal').modal('show');
+
+        window.confirmLogout = function() {
+            window.location.href = '?action=logout'; 
+        };
+    });
+</script>
+
+</body>
+</html>c
+
+		<?php
+		if (!isset($_SESSION)) {
+			session_start();
+		}
+		
+		if (isset($_GET['action']) && $_GET['action'] == 'logout') {
+			session_destroy();  
+			header("Location: index.php"); 
+			exit;
+		}
+		?>
+		
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>Logout</title>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		</head>
+		<body>
+		
+		<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="logoutModalLabel">Confirm Logout</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						Are you sure! You want to logout?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-primary" onclick="confirmLogout()">Logout</button>
+					</div>
+				</div>
+				<img src="download1.jpg"style="width:200px;height="150pix;">
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				$('#logoutModal').modal('show');
+		
+				window.confirmLogout = function() {
+					window.location.href = '?action=logout'; 
+				};
+			});
+		</script>
+		
+<?php
+$host = "localhost";
+$user = "valens";
+$pass = "222009709";
+$database = "business";
+
+$connection = new mysqli($host, $user, $pass, $database);
+if ($connection->connect_error) {
+	die("Connection failed: " . $connection->connect_error);
+}
+function sanitize_input($connection, $input) {
+	return mysqli_real_escape_string($connection, $input);
+}	
+</center></div>
+</body>
+</html>
